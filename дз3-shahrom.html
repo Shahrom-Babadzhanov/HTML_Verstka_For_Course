@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <!-- /test?email=&date=&color=%23000000 
+        file:///C:/test?email=ibragimov-amir%40list.ru&date=2024-01-04&color=%23007bff&password=667788
+
+        file:///C:/test?date=2024-01-04&color=%23ff0000&password=667788
+
+        https://drive.google.com/drive/folders/1JKi8n7Sktq7byIsJZTt_C10e29JZm299
+
+        https://docs.google.com/spreadsheets/d/1hxGQbVmFdlwSktvht_48aGIHy4egGywyU7xks64tOuM/edit#gid=0
+    -->
+</head>
+<body>
+    <form action="/test">
+        <div>
+            <label for="email">Email input</label>
+            <input type="email" placeholder="Введите Email" id="email" name="gid"/>
+            <input type="date" placeholder="Введите Date">
+            <input type="color" id="color"/>
+        </div>
+        <div>
+            <label for="password">Password input</label>
+            <input type="password" placeholder="Введите пароль" id="password"/>
+        </div>
+        
+        <div>
+            <select name="Аниме" id="Аниме">
+                <option value="1">Наруто</option>
+                <option value="2">Атака Титанов</option>
+                <option value="3">Тетрадь смерти</option>
+                <optgroup label="Фильмы">
+                    <option value="11">Вонка</option>
+                    <option value="12">Мстители</option>
+                    <option value="13">Человек паук</option>
+                </optgroup>
+                <optgroup label="Мультфильмы">
+                    <option value="21" selected>Кот в сапогах</option>
+                    <option value="22">Тролли</option>
+                    <option value="23">Симба</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="range">Шрифт</label>
+            <input type="range" id="range" min="0" max="10" name="range"/>
+            <label for="checkbox">Вы уверены в своем выборе?</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+        </div>
+        <div>
+            <button type="submit">Готово</button>
+        </div>
+    </form>
+</body>
+</html>
