@@ -1,51 +1,24 @@
-var operand1 = 0;
-var operand2  = 10;
+let operand1 = 80;
+let operand2  = 50;
 
-var sign = operand1;
-operand1 = operand2;
+let sign = "*";
 
-operand1 = operand1 / operand2;
-operand1 = operand1 * operand2;
-operand1 = operand1 / operand2;
-
-
-const pravda = operand1 > operand2  
-                    ? 
-                    operand1  === operand2  
-                            ? 
-                            "1" 
-                            : 
-                            "2" 
-                            : 
-                        operand1  !== operand2  
-                            ? 
-                            "3" 
-                            : 
-                            "4";
-
-switch (pravda) {
-    case "1":
-        console.log("1");
+switch (sign) {
+    case "*":
+        if(operand1 == 0 || operand2 == 0) console.log(0)
+        else console.log(operand1*operand2);
     break;
 
-    case "2":
-        console.log("2");
+    case "/":
+        if(operand1 == 0 || operand2 == 0) console.log(0)
+        else console.log(operand1/operand2);
     break;
     
-    case "3":
-        console.log("3");
+    case "-":
+         console.log(operand1-operand2);
     break;
 
-    case "4":
-        console.log("4");
+    case "+":
+         console.log(operand1+operand2);
     break;
-}
-
-
-
-if(0) {
-    console.log("Да это Тип String")
-}
-else {
-    console.log("Нет это не тип String")
 }
