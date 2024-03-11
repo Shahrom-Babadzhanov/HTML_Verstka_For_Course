@@ -7,6 +7,5 @@ const days = 7;
      initialPrice = initialPrice + initialPrice * dailyIncreasePercentage / 100;
 }
 
-
 console.log("Цена товара через 7 дней будет составлять:", initialPrice.toFixed(2), "рублей");
 
