@@ -1,13 +1,13 @@
 const findMax = (numbers) => {
-    if (numbers.length === 0) {
-      return null;
+    let maxLength = 0;
+    
+    for (let i = 0; i < str.length; i++) {
+        if (str[i].length > max) {
+            max = str[i];
+        }
     }
-
-    return numbers.reduce(
-      (acc, number) => (number > acc ? number : acc),
-      
-      numbers[0]
-    );
-  };
+    
+    return longestWord;
+}
   
-  findMax([1, 0, -5, 40, 10, -100, 48]); 
+ console.log(findMax([1, 0, -5, 40, 10, -100, 48])); 
